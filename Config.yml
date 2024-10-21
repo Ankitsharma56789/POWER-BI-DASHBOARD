@@ -1,0 +1,34 @@
+name: Power BI Dashboard Configuration
+
+description: Configuration file for the Power BI Dashboard repository
+
+repository:
+  url: https://github.com/Ankitsharma56789/POWER-BI-DASHBOARD
+  branch: main
+
+folders:
+  - name: ECOMMARCE SALES DASHBOARD
+    path: https://github.com/Ankitsharma56789/POWER-BI-DASHBOARD/tree/main/ECOMMARCE%20SALES%20DASHBOARD
+
+  - name: HR ANALYTICS DASHBOARD
+    path: https://github.com/Ankitsharma56789/POWER-BI-DASHBOARD/tree/main/HR%20%20ANALYTICS%20DASHBOARD
+
+# Optional settings
+build:
+  script:
+    - echo "Building Power BI Dashboard..."
+    # Add build steps if necessary
+
+deploy:
+  strategy: automatic
+  environment: production
+  scripts:
+    - echo "Deploying Power BI Dashboard to production..."
+    # Add deployment steps if necessary
+
+notifications:
+  email:
+    recipients:
+      - ankitsharma1531652@gmail.com
+    on_success: always
+    on_failure: always
